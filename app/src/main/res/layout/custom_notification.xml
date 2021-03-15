@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@+id/caratula_libro"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/books" />
+    <TextView android:id="@+id/notificacion_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/caratula_libro" />
+    <TextView android:id="@+id/notificacion_autor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/caratula_libro"
+        android:layout_below="@id/notificacion_titulo" />
+    <ImageView
+        android:id="@+id/notificacion_reproducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        app:srcCompat="@drawable/ic_img_play" />
+</RelativeLayout>
